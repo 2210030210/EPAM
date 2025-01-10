@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Tag Reference">
+    <title>HTML Tag Reference</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        header, footer { background: #f0f0f0; padding: 10px; text-align: center; }
+        section { margin: 20px 0; }
+        table { border-collapse: collapse; width: 100%; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Tag Reference Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#text">Text Tags</a></li>
+                <li><a href="#list">List Tags</a></li>
+                <li><a href="#form">Form Tags</a></li>
+                <li><a href="#media">Media Tags</a></li>
+                <li><a href="#table">Table Tags</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="text">
+            <h2>Text Tags</h2>
+            <p>This is a paragraph tag.</p>
+            <b>Bold Text</b><br>
+            <i>Italic Text</i><br>
+            <u>Underlined Text</u><br>
+            <strong>Strong Text</strong><br>
+            <em>Emphasized Text</em><br>
+            <mark>Highlighted Text</mark><br>
+            <small>Small Text</small><br>
+            <del>Deleted Text</del><br>
+            <ins>Inserted Text</ins><br>
+            <blockquote>This is a blockquote.</blockquote>
+            <abbr title="Hypertext Markup Language">HTML</abbr><br>
+            <code>console.log('Hello World');</code>
+        </section>
+
+        <section id="list">
+            <h2>List Tags</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+            </ul>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ol>
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hypertext Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <section id="form">
+            <h2>Form Tags</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female<br><br>
+                <label>Hobbies:</label>
+                <input type="checkbox" name="hobby1"> Reading
+                <input type="checkbox" name="hobby2"> Traveling<br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="media">
+            <h2>Media Tags</h2>
+            <h3>Image</h3>
+            <img src="https://via.placeholder.com/150" alt="Sample Image">
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+            </audio>
+            <h3>Video</h3>
+            <video controls width="300">
+                <source src="sample.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="table">
+            <h2>Table Tags</h2>
+            <table>
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alice</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bob</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="others">
+            <h2>Other Tags</h2>
+            <details>
+                <summary>Click to Expand</summary>
+                This is hidden content.
+            </details>
+            <progress value="70" max="100"></progress>
+            <meter value="75" min="0" max="100"></meter>
+            <iframe src="https://www.example.com" width="300" height="200"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Tag Reference Page</p>
+    </footer>
+</body>
+</html>
